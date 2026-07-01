@@ -40,18 +40,27 @@ export default function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <Button variant="primary" size="lg" href="#enroll">Start Your Journey <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></Button>
+          <Button variant="primary" size="lg" href="#enroll">Enroll Now — FREE <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></Button>
           <Button variant="secondary" size="lg" href="#curriculum">View Curriculum</Button>
         </div>
 
-        {/* Info banner */}
+        {/* Start date banner */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex flex-wrap items-center justify-center gap-3 sm:gap-5 px-5 py-3 rounded-2xl" style={{ background: 'rgba(230,57,70,0.06)', border: '1px solid rgba(230,57,70,0.2)' }}>
-            <div className="flex items-center gap-2"><span className="text-text-primary text-sm font-bold">Online / Offline</span></div>
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              <span className="text-text-primary text-sm font-bold">Starts 15th July 2025</span>
+            </div>
             <div className="w-px h-4 bg-white/10 hidden sm:block" />
-            <div className="flex items-center gap-2"><span className="text-text-primary text-sm font-bold">No Experience Required</span></div>
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="text-text-primary text-sm font-bold">7:30 PM – 9:30 PM IST</span>
+            </div>
             <div className="w-px h-4 bg-white/10 hidden sm:block" />
-            <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" /><span className="text-green-400 text-sm font-semibold">Enrollment Open</span></div>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+              <span className="text-green-400 text-sm font-semibold">Enrollment Open</span>
+            </div>
           </div>
         </div>
 
