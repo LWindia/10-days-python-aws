@@ -1,17 +1,5 @@
 import { motion } from 'framer-motion'
 import Button from '../ui/Button'
-import TypewriterCode from '../ui/TypewriterCode'
-
-const codeLines = [
-  { text: 'def learn_python(student):' },
-  { text: '    skills = ["AI", "Web", "Cloud", "Automation"]' },
-  { text: '    for skill in skills:' },
-  { text: '        build_project(student, skill)' },
-  { text: '    return "Industry Ready! 🚀"' },
-  { text: '' },
-  { text: '# Start your journey' },
-  { text: 'learn_python("you")' },
-]
 
 export default function HeroSection() {
   return (
@@ -67,7 +55,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* LIVE Typing Code Visual */}
+        {/* Architecture Visual — Input/Engine/Output Diagram */}
         <div className="relative">
           <div className="rounded-2xl p-px" style={{ background: 'linear-gradient(135deg, rgba(230,57,70,0.6) 0%, rgba(184,32,45,0.2) 50%, rgba(230,57,70,0.1) 100%)', boxShadow: '0 0 60px rgba(230,57,70,0.15)' }}>
             <div className="rounded-2xl overflow-hidden bg-surface">
@@ -85,20 +73,74 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Typing Code Area */}
-              <div className="p-6 md:p-8 min-h-[220px]">
-                <TypewriterCode lines={codeLines} typingSpeed={35} lineDelay={400} />
-              </div>
+              {/* Architecture Diagram */}
+              <div className="p-6 md:p-8">
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 md:items-center gap-4">
+                  {/* Input Layer */}
+                  <div className="flex flex-col gap-3">
+                    <div className="text-text-secondary/50 text-xs font-mono uppercase tracking-widest mb-1 text-center md:text-left">Input Layer</div>
+                    {['Fundamentals', 'Data Structures', 'OOP Concepts'].map(item => (
+                      <div key={item} className="flex items-center justify-between gap-3 px-4 py-3 rounded-lg border transition-all duration-300 hover:scale-[1.02]" style={{ background: 'rgba(230,57,70,0.04)', borderColor: 'rgba(230,57,70,0.15)' }}>
+                        <span className="text-white text-sm font-medium">{item}</span>
+                        <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#e63946' }} />
+                      </div>
+                    ))}
+                  </div>
 
-              {/* Status Bar */}
-              <div className="px-5 py-3 border-t border-white/5 flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  {['Learning', 'Building', 'Deploying'].map(s => (
-                    <div key={s} className="flex items-center gap-1.5">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                      <span className="text-text-secondary text-xs font-mono">{s}</span>
+                  {/* Center — arrows on desktop, down arrows on mobile */}
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="hidden md:flex items-center justify-center w-full">
+                      <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(230,57,70,0.4))' }} />
+                      <svg className="w-4 h-4 text-primary mx-1" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                     </div>
-                  ))}
+                    <div className="w-full rounded-xl p-5 text-center" style={{ background: 'linear-gradient(135deg, rgba(230,57,70,0.12), rgba(184,32,45,0.06))', border: '1.5px solid rgba(230,57,70,0.4)', boxShadow: '0 0 30px rgba(230,57,70,0.12)' }}>
+                      <div className="text-primary text-xs font-semibold tracking-widest uppercase mb-2">Core Engine</div>
+                      <div className="text-white text-lg font-black mb-1">Python Bootcamp</div>
+                      <div className="text-text-secondary text-xs mb-4">LinuxWorld Pvt. Ltd</div>
+                      <div className="flex items-center justify-center gap-4 text-xs">
+                        {[['10', 'Days'], ['20h+', 'Hands-On'], ['100%', 'Practical']].map(([v, l], i) => (
+                          <div key={l} className="flex items-center gap-4">
+                            {i > 0 && <div className="w-px h-6 bg-white/10" />}
+                            <div className="text-center">
+                              <div className="font-bold text-sm" style={{ color: '#e63946' }}>{v}</div>
+                              <div className="text-text-secondary/60">{l}</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="hidden md:flex items-center justify-center w-full">
+                      <svg className="w-4 h-4 text-primary mx-1" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                      <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg, rgba(230,57,70,0.4), transparent)' }} />
+                    </div>
+                  </div>
+
+                  {/* Output Layer */}
+                  <div className="flex flex-col gap-3">
+                    <div className="text-text-secondary/50 text-xs font-mono uppercase tracking-widest mb-1 text-center md:text-right">Output Layer</div>
+                    {['Real Applications', 'Portfolio Ready', 'Certification'].map(item => (
+                      <div key={item} className="flex items-center justify-between gap-3 px-4 py-3 rounded-lg border transition-all duration-300 hover:scale-[1.02]" style={{ background: 'rgba(230,57,70,0.04)', borderColor: 'rgba(230,57,70,0.15)' }}>
+                        <span className="text-white text-sm font-medium">{item}</span>
+                        <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#e63946', animationDelay: '0.5s' }} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Status Bar */}
+                <div className="mt-6 pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-4">
+                    {[['Analyzing', true], ['Generating', true], ['Deploying', true], ['Monitoring', false]].map(([l, a]) => (
+                      <div key={String(l)} className="flex items-center gap-1.5">
+                        <div className={`w-1.5 h-1.5 rounded-full ${a ? 'animate-pulse' : 'opacity-30'}`} style={{ background: a ? '#e63946' : '#666' }} />
+                        <span className={`text-xs font-mono ${a ? 'text-text-secondary' : 'text-text-secondary/40'}`}>{String(l)}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-text-secondary/40 text-xs font-mono">tokens/s</span>
+                    <span className="text-primary text-xs font-mono font-bold">2,847</span>
+                  </div>
                 </div>
               </div>
             </div>

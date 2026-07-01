@@ -1,6 +1,7 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import HeroSection from './components/sections/HeroSection'
+import TechStackSection from './components/sections/TechStackSection'
 import WhatYouBuildSection from './components/sections/WhatYouBuildSection'
 import CurriculumSection from './components/sections/CurriculumSection'
 import HowItWorksSection from './components/sections/HowItWorksSection'
@@ -15,6 +16,7 @@ export default function App() {
       <Navbar />
       <main id="main-content" className="relative z-10">
         <HeroSection />
+        <TechStackSection />
         <WhatYouBuildSection />
         <CurriculumSection />
         <HowItWorksSection />
