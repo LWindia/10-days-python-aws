@@ -109,13 +109,15 @@ export default function TestimonialsSection() {
         {/* & many more with avatar circles */}
         <AnimatedSection>
           <div className="flex flex-col items-center mt-10 gap-4">
-            {/* Student images — replace src with Cloudinary URLs later */}
             <div className="flex -space-x-3">
-              <img src="https://via.placeholder.com/48" alt="Student 1" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
-              <img src="https://via.placeholder.com/48" alt="Student 2" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
-              <img src="https://via.placeholder.com/48" alt="Student 3" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
-              <img src="https://via.placeholder.com/48" alt="Student 4" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
-              <img src="https://via.placeholder.com/48" alt="Student 5" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              {[
+                'https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331597/IMG_20250407_122043_-_Himanshu_Swami.jpg_ss8gqw.jpg',
+                'https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331596/20250226_202115_1_1_1__-_Varun_Kumawat.jpg_r0akpz.jpg',
+                'https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331595/IMG_20250604_183554_-_Adarsh_Shah.jpg_v7j5tz.jpg',
+                'https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331595/IMG_20241224_123753_-_Vikrant_Soni.jpg_qkbnl2.jpg',
+              ].map((src, i) => (
+                <img key={i} src={src} alt="Student" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              ))}
             </div>
             <p className="text-2xl sm:text-3xl font-black italic" style={{ background: 'linear-gradient(135deg, #e63946, #ff4d5a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               & many more
