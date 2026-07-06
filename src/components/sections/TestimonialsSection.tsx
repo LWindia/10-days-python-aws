@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: 'Priya Patel',
-    role: 'Working Professional',
+    role: 'Software Aspirant',
     text: "As someone with zero coding background, I was nervous. But the step-by-step approach made it so easy. By Day 5, I was building apps on my own. The expense tracker project was my favorite!",
     rating: 5,
   },
