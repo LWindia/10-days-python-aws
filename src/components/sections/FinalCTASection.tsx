@@ -14,7 +14,7 @@ export default function FinalCTASection() {
           <div className="flex flex-col items-center gap-6">
             <SectionHeading label="Enrollment Open Now" title="Ready to Change Your Life?" highlight="Change Your Life?" subtitle="10 days from now, you could have 8 real projects, a certificate, and real summer internship experience — completely FREE. The only question is — will you start?" />
             <div className="flex flex-wrap gap-4 justify-center mt-2">
-              <Button variant="primary" size="lg" href="#">
+              <Button variant="primary" size="lg" href="https://forms.gle/cJfAxbDd2fNxLMG39" target="_blank">
                 Enroll Now — Free Project Based Learning
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
               </Button>

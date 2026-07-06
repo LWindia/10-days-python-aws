@@ -31,7 +31,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden md:block">
-            <Button variant="primary" size="sm" href="#enroll">Enroll Now</Button>
+            <Button variant="primary" size="sm" href="https://forms.gle/cJfAxbDd2fNxLMG39" target="_blank">Enroll Now</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -56,7 +56,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button variant="primary" size="sm" href="#enroll" className="mt-2 w-full text-center justify-center">
+            <Button variant="primary" size="sm" href="https://forms.gle/cJfAxbDd2fNxLMG39" target="_blank" className="mt-2 w-full text-center justify-center">
               Enroll Now — FREE
             </Button>
           </div>
