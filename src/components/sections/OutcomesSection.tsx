@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from '../ui/AnimatedSection'
 import SectionHeading from '../ui/SectionHeading'
+import CounterAnimation from '../ui/CounterAnimation'
 
 const outcomes = [
   {
@@ -58,10 +59,10 @@ const outcomes = [
 ]
 
 const stats = [
-  { value: '10', label: 'Days' },
-  { value: '5+', label: 'AWS Projects' },
-  { value: '1,200+', label: 'Students Enrolled' },
-  { value: '4.9★', label: 'Average Rating' },
+  { value: 10, label: 'Days', suffix: '', live: false },
+  { value: 5, label: 'AWS Projects', suffix: '+', live: false },
+  { value: 1200, label: 'Students Enrolled', suffix: '+', live: true },
+  { value: 4.9, label: 'Average Rating', suffix: '★', live: false },
 ]
 
 export default function OutcomesSection() {
@@ -140,7 +141,13 @@ export default function OutcomesSection() {
                   whileHover={{ scale: 1.15 }}
                   transition={{ type: 'spring', stiffness: 400 }}
                 >
-                  {stat.value}
+                  {stat.live ? (
+                    <CounterAnimation end={stat.value} suffix={stat.suffix} increment={1} incrementInterval={2500} />
+                  ) : stat.value === 4.9 ? (
+                    <>{stat.value}{stat.suffix}</>
+                  ) : (
+                    <CounterAnimation end={stat.value} suffix={stat.suffix} duration={1500} increment={0} incrementInterval={99999} />
+                  )}
                 </motion.div>
                 <div className="text-text-secondary text-xs sm:text-sm">{stat.label}</div>
               </motion.div>
