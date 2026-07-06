@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Col 1 — Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
-              <img src="/python.svg" alt="Python" className="h-8 w-auto" />
+              <img src="https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331679/LW-white_kktfvb.png" alt="Python" className="h-8 w-auto" />
               <span className="text-white font-bold text-base">LinuxWorld India</span>
             </div>
             <p className="text-text-secondary text-sm leading-relaxed">

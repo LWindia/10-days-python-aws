@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2 group">
-            <img src="/python.svg" alt="Python" className="h-7 w-auto" />
+            <img src="https://res.cloudinary.com/dj5qsxew9/image/upload/v1783331679/LW-white_kktfvb.png" alt="Python" className="h-7 w-auto" />
             <span className="text-text-primary font-semibold text-sm">Python + AWS™</span>
           </a>
           <div className="hidden md:flex items-center gap-8">
