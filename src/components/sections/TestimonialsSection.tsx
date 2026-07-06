@@ -72,10 +72,6 @@ export default function TestimonialsSection() {
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">"{t.text}"</p>
                 {/* Author */}
                 <div className="flex items-center gap-3 pt-2 border-t border-white/5">
-                  {/* Placeholder avatar — replace with real image later */}
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'linear-gradient(135deg, #e63946, #b8202d)' }}>
-                    {t.name.split(' ').map(n => n[0]).join('')}
-                  </div>
                   <div>
                     <p className="text-white font-semibold text-sm">{t.name}</p>
                     <p className="text-text-secondary text-xs">{t.role}</p>
@@ -117,18 +113,6 @@ export default function TestimonialsSection() {
         {/* & many more with avatar circles */}
         <AnimatedSection>
           <div className="flex flex-col items-center mt-10 gap-4">
-            <div className="flex -space-x-3">
-              {['AS', 'MK', 'RP', 'VJ', 'NK'].map((initials, i) => (
-                <div
-                  key={i}
-                  className="w-12 h-12 rounded-full border-2 border-bg-base flex items-center justify-center text-xs font-bold text-white shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${i % 2 === 0 ? '#e63946' : '#ff4d5a'}, #b8202d)`, animationDelay: `${i * 0.1}s` }}
-                >
-                  {/* Replace these with real images later: <img src="/testimonials/avatar{i}.jpg" className="w-full h-full rounded-full object-cover" /> */}
-                  {initials}
-                </div>
-              ))}
-            </div>
             <p className="text-2xl sm:text-3xl font-black italic" style={{ background: 'linear-gradient(135deg, #e63946, #ff4d5a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               & many more
             </p>
