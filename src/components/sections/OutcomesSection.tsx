@@ -23,8 +23,8 @@ export default function OutcomesSection() {
         </div>
         <AnimatedSection speed="slow">
           <div className="mt-10 glass rounded-2xl p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {[{ value: '10', label: 'Days' }, { value: '20+', label: 'Hours of Content' }, { value: '1,200+', label: 'Students Enrolled' }, { value: '4.9★', label: 'Average Rating' }].map((stat) => (
-              <div key={stat.label}><div className="text-2xl md:text-3xl font-black mb-1" style={{ color: '#e63946' }}>{stat.value}</div><div className="text-text-secondary text-xs">{stat.label}</div></div>
+            {[{ value: '10', label: 'Days' }, { value: '5+', label: 'AWS Projects' }, { value: '1,200+', label: 'Students Enrolled' }, { value: '4.9★', label: 'Average Rating' }].map((stat) => (
+              <div key={stat.label} className="group cursor-default"><div className="text-2xl md:text-3xl font-black mb-1 transition-transform group-hover:scale-110 duration-300" style={{ color: '#e63946' }}>{stat.value}</div><div className="text-text-secondary text-xs">{stat.label}</div></div>
             ))}
           </div>
         </AnimatedSection>

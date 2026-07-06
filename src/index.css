@@ -42,11 +42,27 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(230, 57, 70, 0.12);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+.glass:hover {
+  border-color: rgba(230, 57, 70, 0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(230, 57, 70, 0.08);
 }
 
 @keyframes shimmer {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(230,57,70,0.2); }
+  50% { box-shadow: 0 0 30px rgba(230,57,70,0.5); }
 }
 
 @media (prefers-reduced-motion: reduce) {
