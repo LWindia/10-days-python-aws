@@ -97,9 +97,6 @@ export default function TestimonialsSection() {
                 </div>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">"{t.text}"</p>
                 <div className="flex items-center gap-3 pt-2 border-t border-white/5">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'linear-gradient(135deg, #e63946, #b8202d)' }}>
-                    {t.name.split(' ').map(n => n[0]).join('')}
-                  </div>
                   <div>
                     <p className="text-white font-semibold text-sm">{t.name}</p>
                     <p className="text-text-secondary text-xs">{t.role}</p>
