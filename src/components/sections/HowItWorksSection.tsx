@@ -94,7 +94,7 @@ export default function HowItWorksSection() {
           >
             {[
               { value: '10', label: 'Days of Learning' },
-              { value: '5+', label: 'AWS Projects' },
+              { value: '5', label: 'Cloud Projects' },
               { value: '100%', label: 'Practical Output' },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center gap-1">

@@ -21,15 +21,15 @@ export const whatYouBuild = [
 
 export const outcomes = [
   { icon: '☁️', title: 'AWS Cloud Automation', desc: 'Automate EC2, S3, Lambda, DynamoDB and more using Python & Boto3' },
-  { icon: '💻', title: 'Build Real Applications', desc: 'Graduate with 5+ production-ready AWS automation projects for your portfolio' },
+  { icon: '💻', title: 'Build 5 Real Cloud Apps', desc: 'Graduate with 5 production-ready Python & Cloud applications for your portfolio' },
   { icon: '🚀', title: 'Industry-Ready Skills', desc: 'Master Python + AWS the way professionals use it in real cloud environments' },
-  { icon: '🎓', title: 'FREE Summer Internship Certificate', desc: 'Get a recognized internship certificate to boost your resume — completely free' },
+  { icon: '🎓', title: 'FREE Summer Internship Certificate', desc: 'Get a recognized internship certificate demonstrating practical skills in automation & cloud' },
 ]
 
 export const whoIsItFor = [
-  { icon: '🎓', title: 'Students', desc: 'Class 11/12, BCA, B.Tech, MCA — build cloud projects before you graduate' },
+  { icon: '🎓', title: 'Students', desc: 'Class 11/12, Diploma, BCA, B.Tech, MCA — build cloud projects before you graduate' },
   { icon: '🌱', title: 'Complete Beginners', desc: 'No programming or cloud background needed. We start from absolute zero.' },
-  { icon: '💼', title: 'Job Seekers', desc: 'Stand out with Python + AWS projects and hands-on cloud skills' },
+  { icon: '💼', title: 'Job Seekers & Software Aspirants', desc: 'Stand out with Python + AWS projects and hands-on cloud skills' },
   { icon: '👨‍💻', title: 'Working Professionals', desc: 'Add cloud automation skills to accelerate your career growth' },
 ]
 

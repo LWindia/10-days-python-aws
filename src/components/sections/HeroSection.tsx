@@ -35,7 +35,7 @@ export default function HeroSection() {
           <p className="text-text-secondary text-lg sm:text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
             Don't just learn Python — <span className="text-white font-semibold">build real AWS cloud applications that get you hired.</span>
             <br className="hidden sm:block" />
-            <span className="text-text-secondary/70 text-base sm:text-lg">10 Days · 5+ AWS Projects · FREE Summer Internship</span>
+            <span className="text-text-secondary/70 text-base sm:text-lg">10 Days · 5 Cloud Projects · FREE Summer Internship</span>
           </p>
         </div>
 

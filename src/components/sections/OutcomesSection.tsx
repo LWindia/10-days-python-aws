@@ -60,7 +60,7 @@ const outcomes = [
 
 const stats = [
   { value: 10, label: 'Days', suffix: '', live: false },
-  { value: 5, label: 'AWS Projects', suffix: '+', live: false },
+  { value: 5, label: 'Cloud Projects', suffix: '', live: false },
   { value: 1200, label: 'Students Enrolled', suffix: '+', live: true },
   { value: 4.9, label: 'Average Rating', suffix: '★', live: false },
 ]
