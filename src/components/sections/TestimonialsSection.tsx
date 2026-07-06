@@ -113,6 +113,14 @@ export default function TestimonialsSection() {
         {/* & many more with avatar circles */}
         <AnimatedSection>
           <div className="flex flex-col items-center mt-10 gap-4">
+            {/* Student images — replace src with Cloudinary URLs later */}
+            <div className="flex -space-x-3">
+              <img src="https://via.placeholder.com/48" alt="Student 1" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              <img src="https://via.placeholder.com/48" alt="Student 2" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              <img src="https://via.placeholder.com/48" alt="Student 3" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              <img src="https://via.placeholder.com/48" alt="Student 4" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+              <img src="https://via.placeholder.com/48" alt="Student 5" className="w-12 h-12 rounded-full border-2 border-bg-base object-cover shadow-lg" />
+            </div>
             <p className="text-2xl sm:text-3xl font-black italic" style={{ background: 'linear-gradient(135deg, #e63946, #ff4d5a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               & many more
             </p>
