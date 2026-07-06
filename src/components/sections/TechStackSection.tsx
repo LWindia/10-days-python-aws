@@ -20,7 +20,7 @@ const row3 = [
   'Generative AI on AWS', 'Cloud Resource Management', 'Infrastructure Automation',
   'Serverless File Processing', 'Health Monitoring Systems', 'Automated Backup',
   'Cloud Inventory Reports', 'CSV Export', 'Real-Time Alerts',
-  'Python + AWS Portfolio', 'Summer Internship Certificate', 'Industry-Ready Skills',
+  'Python + AWS Portfolio', 'Project Based Learning Certificate', 'Industry-Ready Skills',
 ]
 
 const repeat = (arr: string[], times = 5) => Array.from({ length: times }, () => arr).flat()

@@ -23,7 +23,7 @@ export const outcomes = [
   { icon: '☁️', title: 'AWS Cloud Automation', desc: 'Automate EC2, S3, Lambda, DynamoDB and more using Python & Boto3' },
   { icon: '💻', title: 'Build 5 Real Cloud Apps', desc: 'Graduate with 5 production-ready Python & Cloud applications for your portfolio' },
   { icon: '🚀', title: 'Industry-Ready Skills', desc: 'Master Python + AWS the way professionals use it in real cloud environments' },
-  { icon: '🎓', title: 'FREE Summer Internship Certificate', desc: 'Get a recognized internship certificate demonstrating practical skills in automation & cloud' },
+  { icon: '🎓', title: 'Free Project Based Learning Certificate', desc: 'Get a recognized project-based learning certificate demonstrating practical skills in automation & cloud' },
 ]
 
 export const whoIsItFor = [

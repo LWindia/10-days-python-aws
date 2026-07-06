@@ -35,13 +35,13 @@ export default function HeroSection() {
           <p className="text-text-secondary text-lg sm:text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
             Don't just learn Python — <span className="text-white font-semibold">build real AWS cloud applications that get you hired.</span>
             <br className="hidden sm:block" />
-            <span className="text-text-secondary/70 text-base sm:text-lg">10 Days · 5 Cloud Projects · FREE Summer Internship</span>
+            <span className="text-text-secondary/70 text-base sm:text-lg">10 Days · 5 Cloud Projects · Free Project Based Learning</span>
           </p>
         </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <Button variant="primary" size="lg" href="#enroll">Enroll Now — FREE Summer Internship <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></Button>
+          <Button variant="primary" size="lg" href="#enroll">Enroll Now — Free Project Based Learning <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></Button>
           <Button variant="secondary" size="lg" href="#curriculum">View Curriculum</Button>
         </div>
 

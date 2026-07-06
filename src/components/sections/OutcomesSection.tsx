@@ -44,7 +44,7 @@ const outcomes = [
     highlight: false,
   },
   {
-    title: 'FREE Summer Internship Certificate',
+    title: 'Free Project Based Learning Certificate',
     desc: 'Get a recognized internship certificate to boost your resume — completely free',
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
