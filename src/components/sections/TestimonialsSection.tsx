@@ -7,30 +7,29 @@ const testimonials = [
     role: 'B.Tech CSE Student',
     text: "This bootcamp completely changed my perspective on programming. Building real projects every day made concepts stick. I now have a portfolio that impresses recruiters.",
     rating: 5,
-    // Add image later: image: '/testimonials/rahul.jpg'
   },
   {
     name: 'Priya Patel',
-    role: 'Software Aspirant',
-    text: "As someone with zero coding background, I was nervous. But the step-by-step approach made it so easy. By Day 5, I was building apps on my own. The expense tracker project was my favorite!",
+    role: 'BCA Student',
+    text: "As someone with zero coding background, I was nervous. But the step-by-step approach made it so easy. By Day 5, I was building apps on my own. The AWS automation was my favorite!",
     rating: 5,
   },
   {
     name: 'Amit Kumar',
-    role: 'BCA Student',
-    text: "The best part was that every project solved a real business problem. File automation and API integration sessions were incredibly practical. I use these skills daily now.",
+    role: 'B.Tech IT Student',
+    text: "The best part was that every project solved a real business problem. EC2 automation and S3 integration sessions were incredibly practical. I use these skills daily now.",
     rating: 5,
   },
   {
     name: 'Sneha Reddy',
-    role: 'Career Switcher',
-    text: "I switched from a non-tech background. This bootcamp gave me the confidence to apply for Python developer roles. The capstone billing project alone is worth more than any certificate.",
+    role: 'Diploma Student',
+    text: "I switched from a non-tech background. This bootcamp gave me the confidence to apply for Python developer roles. The cloud projects alone are worth more than any certificate.",
     rating: 5,
   },
   {
     name: 'Vikash Meena',
     role: 'Final Year MCA',
-    text: "I've tried many online courses before but none were this hands-on. Building 8 real applications in 10 days — that's insane value. The OOP and API sessions were game-changers.",
+    text: "I've tried many online courses before but none were this hands-on. Building 5 real cloud applications in 10 days — that's insane value. The OOP and API sessions were game-changers.",
     rating: 5,
   },
 ]
