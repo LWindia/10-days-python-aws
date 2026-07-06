@@ -30,7 +30,7 @@ export const whoIsItFor = [
   { icon: '🎓', title: 'Students', desc: 'Class 11/12, Diploma, BCA, B.Tech, MCA — build cloud projects before you graduate' },
   { icon: '🌱', title: 'Complete Beginners', desc: 'No programming or cloud background needed. We start from absolute zero.' },
   { icon: '💼', title: 'Job Seekers & Software Aspirants', desc: 'Stand out with Python + AWS projects and hands-on cloud skills' },
-  { icon: '👨‍💻', title: 'Working Professionals', desc: 'Add cloud automation skills to accelerate your career growth' },
+  { icon: '🐍', title: 'Anyone Interested in Python', desc: 'Curious about Python programming? This is the perfect place to start your journey.' },
 ]
 
 export const whyCourse = [
